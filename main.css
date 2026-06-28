@@ -68,6 +68,15 @@ h2 {
     border-bottom: 1px solid #CBD79D;
     padding-bottom: 4px;
     margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-family: "Comfortaa", sans-serif;
+    color: #fff;
+    font-size: 26px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
 }
 
 
@@ -144,11 +153,39 @@ h2 {
     padding: 10px 20px;
     cursor: pointer;
     font-family: "Lato", sans-serif;
+margin-bottom: 32px;
 }
 
 
 .game-card button:hover {
     background-color: #CBD79D;
+}
+
+#carousel-exemplo {
+    max-width: 100%;
+  margin: 0 auto;
+}
+
+#carousel-exemplo img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.formulario {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    background-color: #CB5B67;
+    color: #1A1A1D;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 819px) {
@@ -180,6 +217,9 @@ h2 {
     .games {
         grid-template-columns: 1fr;
     }
+    .row > div {
+        width: 100%;
+    }
 
 }
 
@@ -203,6 +243,10 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .row > div {
+        width: 50%;
+    }
+
 }
 
 @media screen and (min-width: 1180px) {
@@ -224,20 +268,5 @@ h2 {
 
 }
 
-.formulario {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 24px;
-}
 
-.btn {
-    background-color: #CB5B67;
-    color: #1A1A1D;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-family: "Lato", sans-serif;
-}
 
